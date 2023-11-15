@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>MADHVI TIWARI -Portfolio</title>
+    </head>
+    <body>
+        <h1>MADHVI TIWARI</h1>
+        <h2>About me</h2>
+        <p>My name is Madhvi tiwari,and I am from Bihar. I am currently in my 3rd year of my college studying Artificial Intelligence and Machine Learning in HKBK College of ENgineering,Karnataka.
+        <h3>SKILLS</h3>
+        <ul>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Flexibility</li>
+        </ul>
+        <h4>INTERESTS</h4>
+        <ul>
+            <li>Painting</li>
+            <li>Listening to music</li>
+            <li>Dancing</li>
+	    <li>Writing poems</li>
+	    <li>playing instuments</li>
+        </ul>
+         <p>Email : madhvitiwari.07@gmail.com</p>
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File</title>
+</head>
+<body>
+    <div style="border: 1px solid black; width: 98.7%; height: 80px;"></div>
+    <div style="border: 1px solid black; width: 20%; height: 500px; float: left;"></div>
+    <div style="border: 1px solid black; width: 78.5%; height: 500px; float: left;">
+    <div style="border: 1px solid black; width: 90%; height: 80px; margin-top: 20px; margin-left: 5%;"></div>
+    <div style="border: 1px solid black; width: 40%; height: 350px; margin-top: 10px; margin-left: 5%; float: left;"></div>
+    <div style="border: 1px solid black; width: 40%; height: 350px; margin-top: 10px; margin-left: 55%;"></div>
+    </div>
+    <div style="border: 1px solid black; width: 98.7%; height: 80px; margin-top: 500px;"></div>
+ 
+</body>
+</html>
+
+
