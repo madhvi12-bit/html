@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #todo-container {
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    #task-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .task {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .task input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="todo-container">
+    <h2>To-Do List</h2>
+    <ul id="task-list"></ul>
+    <input type="text" id="new-task" placeholder="Add a new task">
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <script>
+    function addTask() {
+      const taskInput = document.getElementById('new-task');
+      const taskList = document.getElementById('task-list');
+
+      if (taskInput.value.trim() !== '') {
+        const taskItem = document.createElement('li');
+        taskItem.className = 'task';
+        taskItem.innerHTML = `
+          <input type="checkbox">
+          <span>${taskInput.value}</span>
+          <button onclick="removeTask(this)">Remove</button>
+        `;
+        taskList.appendChild(taskItem);
+        taskInput.value = '';
+      }
+    }
+
+    function removeTask(button) {
+      const taskItem = button.parentElement;
+      taskItem.remove();
+    }
+  </script>
+
+</body>
+</html>
